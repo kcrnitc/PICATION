@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Code</title>
+    <style>
+        body {
+           
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+         h1
+           { color : #D4AF37 }
+            
+           pre {
+            font-size: 24px;
+            color: #D4AF37;
+              }
+        /* Your CSS styles here if needed */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arduino Code</h1>
+    </header>
+    <main>
+        <pre>
+#include &lt;Servo.h&gt;
+
+Servo s1;
+// Replace with the appropriate pin for your IR sensor
+
+void setup() {
+  s1.attach(8);
+
+  Serial.begin(9600);
+}
+
+void loop() {
+  s1.write(150);
+  delay(100);
+  s1.write(0);
+  delay(100);
+}
+        </pre>
+    </main>
+</body>
+</html>
